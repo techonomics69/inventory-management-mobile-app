@@ -13,22 +13,22 @@
             - **/warehouses**
                 - GET: retrieves all warehouses
                 - POST: creates new warehouse
-            - **/warehouses/<warehouse id>**
+            - **/warehouses/[warehouse id]**
                 - GET: retrieves warehouse with <warehouse id>
                 - PUT: updates warehouse with <warehouse id>
                 - DELETE: deletes warehouse with <warehouse id> and sets any pieces of merch currently referencing <warehouse id> to a generic warehouse id of 1, which indicates the merch still exists but is currently not being managed by a specific warehouse
             - **/merch**
                 - GET: retrieves all merch
                 - POST: creates new merch
-            - **/merch/<merch id>**
+            - **/merch/[merch id]**
                 - GET: retrieves merch with <merch id>
                 - PUT: updates merch with <merch id>
                 - DELETE: deletes merch with <merch id>
-            - **/merch/<merch id>/warehouses/<warehouse id>**
+            - **/merch/[merch id]/warehouses/[warehouse id]**
                 - PUT: associates warehouse with <warehouse id> with merch with <merch id>
             - **/merch/search**
                 - POST: retrieves all merch but is filtered by searching for merch properties
-            - **/merch/sum/<merch name>**
+            - **/merch/sum/[merch name]**
                 - GET: computes and outputs sum of all quantities of merch with <merch name>; <merch name> may contain spaces, but spaces must be input as underscores
 
 - Build the Android app in Android Studio and install the resulting APK on an Android device.
